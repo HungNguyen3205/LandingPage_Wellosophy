@@ -2,6 +2,53 @@
 
 Dự án Landing Page cao cấp giới thiệu **Bộ 3 Cân Bằng Trục Não Da Ruột Wellosophy by Oriflame**, được clone và nâng cấp giao diện toàn diện từ trang gốc [kh-bo3trucnaodaruot.netlify.app/ptt/](https://kh-bo3trucnaodaruot.netlify.app/ptt/).
 
+- 🌐 **Website chính thức:** [https://wellosophy.danava.com.vn](https://wellosophy.danava.com.vn)
+- 📦 **Kho Git Repository:** [https://github.com/HungNguyen3205/LandingPage_Wellosophy.git](https://github.com/HungNguyen3205/LandingPage_Wellosophy.git)
+
+---
+
+## 💻 HƯỚNG DẪN QUẢN TRỊ & CẬP NHẬT TRÊN TERMINAL CPANEL
+
+### 1. Cách cập nhật website khi có thay đổi code mới
+
+#### Bước 1: Đẩy code từ máy tính lên GitHub
+Mở Terminal / PowerShell tại thư mục dự án trên máy tính:
+```bash
+git add .
+git commit -m "Cập nhật nội dung mới"
+git push
+```
+
+#### Bước 2: Đồng bộ về máy chủ cPanel
+Mở **Terminal** trên cPanel và chạy:
+```bash
+cd ~/wellosophy.danava.com.vn
+git pull origin main
+```
+Website [https://wellosophy.danava.com.vn](https://wellosophy.danava.com.vn) sẽ cập nhật nội dung mới ngay lập tức!
+
+---
+
+### 2. Các lệnh hữu ích khi dùng Terminal cPanel
+
+| Câu lệnh | Tác dụng |
+| :--- | :--- |
+| `cd ~/wellosophy.danava.com.vn` | Di chuyển vào thư mục web của trang |
+| `pwd` | Hiển thị đường dẫn thư mục hiện tại đang đứng |
+| `ls -la` | Liệt kê tất cả các file (kể cả file ẩn) |
+| `git pull origin main` | Kéo code mới nhất từ GitHub về máy chủ |
+| `git status` | Xem trạng thái các file git trên cPanel |
+
+---
+
+### 3. Cách sửa lỗi nhanh khi không `git pull` được
+Nếu bạn lỡ sửa file nào đó trực tiếp trên cPanel khiến lệnh `git pull` báo lỗi xung đột (conflict), hãy chạy 2 lệnh sau để ép cPanel đồng bộ 100% giống hệt GitHub:
+```bash
+cd ~/wellosophy.danava.com.vn
+git fetch --all
+git reset --hard origin/main
+```
+
 ---
 
 ## 🌟 Điểm nổi bật & Các cải tiến vượt trội so với bản gốc
@@ -22,7 +69,7 @@ Dự án Landing Page cao cấp giới thiệu **Bộ 3 Cân Bằng Trục Não 
    - Tốc độ tải trang siêu tốc (< 0.5 giây), không bị phụ thuộc vào link ảnh ngoài hay lỗi chết link.
 
 3. **Hệ thống Animation cao cấp & Tương tác mượt mà (60 FPS):**
-   - **Scroll Reveal (Cuộn tới đâu mượt tới đó):** Sử dụng `IntersectionObserver` tối ưu hóa GPU, các phần tử (tiêu đề, thẻ thông tin, sản phẩm, bảng giá) trượt nhẹ và hiển thị mượt mà khi người dùng cuộn trang.
+   - **Scroll Reveal (Cuộn tới đâu mượt tới đó):** Sử dụng `IntersectionObserver` tối ưu hóa GPU, các phần tử trượt nhẹ và hiển thị mượt mà khi người dùng cuộn trang.
    - **Bộ đếm số nhảy động (Animated Counters):** Các chỉ số nghiên cứu y khoa (70% HP, 7 triệu người trào ngược, 42% căng thẳng, 90-95% Serotonin) tự động chạy số tăng dần khi lướt tới.
    - **Vệt sáng quét qua nút bấm (Shimmer Light Sweep):** Dải sáng vàng quét nhẹ liên tục qua các nút CTA chính (`Đặt Hàng Nhanh`, `Đặt Mua Ngay`) tạo hiệu ứng kích thích hành động cao.
    - **Hộp VIP phát sáng thở (Breathing Pulse Glow):** Khung ưu đãi VIP 1.474k tỏa sáng vàng hoàng gia nhẹ nhàng chu kỳ 4.5s.
@@ -47,11 +94,13 @@ Dự án Landing Page cao cấp giới thiệu **Bộ 3 Cân Bằng Trục Não 
 ```text
 LandingPage_Wellosophy/
 ├── index.html                   # Trang chủ chính (Semantic HTML5, chuẩn SEO)
+├── README.md                    # Tài liệu hướng dẫn sử dụng & quản trị cPanel
+├── DEPLOY_CPANEL_GUIDE.md       # Sổ tay lệnh cPanel cheat-sheet
 ├── assets/
 │   ├── css/
 │   │   └── style.css            # Toàn bộ CSS hệ thống thiết kế hiện đại
 │   ├── js/
-│   │   └── main.js              # Xử lý video tabs, lightbox, FAQ, scroll
+│   │   └── main.js              # Xử lý animation, video tabs, lightbox, FAQ, scroll
 │   └── images/
 │       ├── product-probiotic.webp
 │       ├── product-prebiotic.webp
@@ -59,38 +108,4 @@ LandingPage_Wellosophy/
 │       ├── feedback-nhung.jpg
 │       ├── feedback-tho.jpg
 │       └── feedback-ngoc.jpg
-└── README.md                    # Tài liệu hướng dẫn sử dụng & triển khai
 ```
-
----
-
-## 🚀 Hướng dẫn chạy và sử dụng
-
-### 1. Xem trực tiếp trên máy tính
-- Chỉ cần nhấp đúp (Double-click) vào file `index.html` để mở trong bất kỳ trình duyệt nào (Chrome, Edge, Firefox, Safari).
-- Không yêu cầu cài đặt máy chủ hay NodeJS để chạy.
-
-### 2. Chạy với Local Server (nếu muốn thử môi trường web chuẩn)
-- Bằng Python:
-  ```bash
-  python -m http.server 8080
-  ```
-  Truy cập: `http://localhost:8080`
-- Bằng Node.js:
-  ```bash
-  npx serve .
-  ```
-
----
-
-## 🌐 Hướng dẫn triển khai lên mạng (Hosting)
-
-### Cách 1: Triển khai lên Netlify (Cực kỳ đơn giản - Miễn phí)
-1. Đăng nhập vào [netlify.com](https://www.netlify.com/).
-2. Vào mục **Sites** -> Chọn **Add new site** -> Chọn **Deploy manually**.
-3. Kéo toàn bộ thư mục `LandingPage_Wellosophy` thả vào ô upload của Netlify.
-4. Netlify sẽ tự động cung cấp đường link trực tiếp (ví dụ: `your-project.netlify.app`) ngay lập tức!
-
-### Cách 2: Triển khai lên Vercel hoặc GitHub Pages
-- Đẩy source code lên GitHub và kết nối với Vercel/GitHub Pages chỉ với 1 click.
-
