@@ -82,8 +82,8 @@ git reset --hard origin/main
 
 4. **Đầy đủ & chuẩn xác toàn bộ liên kết hành động:**
    - 🛒 **Link đặt hàng Oriflame Shop:** `https://shop.oriflame.com/VX-phungtantuong/cOznvmBTk`
-   - 💬 **Zalo tư vấn:** `https://zalo.me/0905109933`
-   - 📞 **Hotline gọi nhanh:** `tel:0905109933`
+   - 💬 **Zalo tư vấn:** `https://zalo.me/0905041104`
+   - 📞 **Hotline gọi nhanh:** `tel:0905041104`
    - 📹 **Video YouTube 1:** `https://youtu.be/GuhB3Pt8Dwg`
    - 📹 **Video YouTube 2:** `https://youtu.be/Mqcm3wIyHyY`
 
