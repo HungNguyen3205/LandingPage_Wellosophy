@@ -78,3 +78,4 @@ git reset --hard origin/main
 2. Tìm dòng `wellosophy.danava.com.vn`.
 3. Gạt nút tại cột **Force HTTPS Redirect** sang **ON**.
 4. Truy cập kiểm tra: `https://wellosophy.danava.com.vn`
+
