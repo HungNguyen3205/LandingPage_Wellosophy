@@ -13,3 +13,6 @@ Desktop.ini
 *.swp
 *.swo
 
+
+# Local server config (may contain private info)
+deploy/server.config

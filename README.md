@@ -3,7 +3,9 @@
 Dự án Landing Page cao cấp giới thiệu **Bộ 3 Cân Bằng Trục Não Da Ruột Wellosophy by Oriflame**, được clone và nâng cấp giao diện toàn diện từ trang gốc [kh-bo3trucnaodaruot.netlify.app/ptt/](https://kh-bo3trucnaodaruot.netlify.app/ptt/).
 
 - 🌐 **Website chính thức:** [https://wellosophy.danava.com.vn](https://wellosophy.danava.com.vn)
-- 📦 **Kho Git Repository:** [https://github.com/HungNguyen3205/LandingPage_Wellosophy.git](https://github.com/HungNguyen3205/LandingPage_Wellosophy.git)
+- 📦 **Repo chính (tổ chức):** [https://github.com/danava-org/LandingPage_Wellosophy.git](https://github.com/danava-org/LandingPage_Wellosophy.git)
+- 📦 **Repo phụ (mirror):** [https://github.com/HungNguyen3205/LandingPage_Wellosophy.git](https://github.com/HungNguyen3205/LandingPage_Wellosophy.git)
+- 🖥️ **Thông tin server & setup cho thành viên mới:** [SERVER_SETUP.md](SERVER_SETUP.md)
 
 ---
 
@@ -96,6 +98,11 @@ LandingPage_Wellosophy/
 ├── index.html                   # Trang chủ chính (Semantic HTML5, chuẩn SEO)
 ├── README.md                    # Tài liệu hướng dẫn sử dụng & quản trị cPanel
 ├── DEPLOY_CPANEL_GUIDE.md       # Sổ tay lệnh cPanel cheat-sheet
+├── SERVER_SETUP.md              # Thông tin server & hướng dẫn cho thành viên mới
+├── deploy/
+│   ├── server.config.example    # Cấu hình server (không chứa mật khẩu)
+│   ├── deploy.sh                # Script deploy chạy trên cPanel
+│   └── setup-remotes.sh         # Cấu hình push lên cả 2 repo GitHub
 ├── assets/
 │   ├── css/
 │   │   └── style.css            # Toàn bộ CSS hệ thống thiết kế hiện đại

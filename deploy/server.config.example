@@ -1,0 +1,18 @@
+# Cấu hình server Wellosophy Landing Page
+# Copy thành deploy/server.config (đã được .gitignore) nếu cần thêm thông tin riêng.
+# KHÔNG đưa mật khẩu / token vào file .example này.
+
+SITE_DOMAIN=wellosophy.danava.com.vn
+SITE_URL=https://wellosophy.danava.com.vn
+HOSTING_TYPE=cpanel
+DEPLOY_DIR=~/wellosophy.danava.com.vn
+DEPLOY_BRANCH=main
+
+# Repo chính (server nên pull từ repo này)
+GIT_REPO_PRIMARY=https://github.com/danava-org/LandingPage_Wellosophy.git
+# Repo phụ (mirror)
+GIT_REPO_MIRROR=https://github.com/HungNguyen3205/LandingPage_Wellosophy.git
+
+# Điền trong deploy/server.config (không commit):
+# CPANEL_URL=
+# CPANEL_USER=

@@ -22,7 +22,7 @@ rm -rf *
 
 ### Lệnh 3: Kéo code từ GitHub về (Lưu ý dấu chấm ` .` ở cuối)
 ```bash
-git clone https://github.com/HungNguyen3205/LandingPage_Wellosophy.git .
+git clone https://github.com/danava-org/LandingPage_Wellosophy.git .
 ```
 > ⚠️ **CỰC KỲ QUAN TRỌNG:** Dấu cách và dấu chấm ` .` ở cuối câu lệnh bắt buộc phải có để git xả thẳng file `index.html` và thư mục `assets` vào ngay thư mục web, không bị tạo thêm thư mục con lồng vào.
 
